@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxes</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .fifo {
+            height: 20px;
+            width: 20px;
+            margin: 2px;
+            background-color: rgb(55, 5, 255);
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .fifo:hover {
+            background-color: rgb(255, 242, 0);
+            border-radius: 50%;
+            box-shadow: 12px 12px 12px 12px rgba(212, 255, 0, 0.382);
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        for (let i = 0; i <= 3500; i++) {
+            const h1 = document.createElement("div");
+            h1.setAttribute("class", "fifo");
+            document.body.appendChild(h1);
+        }
+    </script>
+</body>
+
+</html>
